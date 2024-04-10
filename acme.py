@@ -26,9 +26,10 @@ class Product:
         ratio = self.price / self.weight
         if ratio < 0.5:
             return "Not so stealable..."
-        if ratio >= 0.5 or ratio < 1.0:
+        elif 0.5 <= ratio < 1.0:
             return "Kinda stealable."
-        return "Very stealable!"
+        else:
+            return "Very stealable!"
 
     def explode(self):
         """
@@ -38,9 +39,10 @@ class Product:
         product = self.flammability * self.weight
         if product < 10:
             return "...fizzle."
-        if 10 <= product < 50:
+        elif 10 <= product < 50:
             return "...boom!"
-        return "...BABOOM!!"
+        else:
+            return "...BABOOM!!"
 
 
 class BoxingGlove(Product):

@@ -7,6 +7,9 @@ acme_report to ensure they are working
 from acme import Product
 from acme_report import generate_products
 
+ADJECTIVES = ['Awesome', 'Shiny', 'Impressive', 'Portable', 'Improved']
+NOUNS = ['Anvil', 'Catapult', 'Disguise', 'Mousetrap', '???']
+
 
 def test_default_product_price():
     '''Test default product price being 10.'''
