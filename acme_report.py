@@ -7,18 +7,17 @@ def generate_products(num_products=30):
     nouns = ['Anvil', 'Catapult', 'Disguise', 'Mousetrap', '???']
     product_list = []
     for _ in range(num_products):
-        name = random.choice(adjectives), random.choice(nouns)
+        name = ' '.join([random.choice(adjectives), random.choice(nouns)])
         price = random.randrange(5, 101)
         weight = random.randrange(5, 101)
         flammability = random.randrange(0, 3)
         product = Product(name, price, weight, flammability)
-    product_list.append(product)
+        product_list.append(product)
     return product_list
-
 
 # products = generate_products(30)
 # for product in products:
-    # print(f"Name: {product.name}, Price: {product.price}, Weight: {product.weight}, Flammability: {product.flammability}, Identifier: {product.identifier}")
+#     print(f"Name: {product.name}, Price: {product.price}, Weight: {product.weight}, Flammability: {product.flammability}, Identifier: {product.identifier}")
 
 
 def inventory_report(products):
@@ -38,5 +37,5 @@ def inventory_report(products):
 
     return (num_unique_products, average_price, average_weight, average_flammability)
 
-if __name__ == '__main__':
-    print(inventory_report(generate_products()))
+# if __name__ == '__main__':
+#     print(inventory_report(generate_products()))
