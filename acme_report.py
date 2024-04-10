@@ -1,5 +1,5 @@
 """
-This module goes ahead and create 
+This module goes ahead and create
 random products
 """
 import random
@@ -7,9 +7,10 @@ import random
 # pylint: disable=E0401
 from acme import Product
 
+
 def generate_products(num_products=30):
     """
-    This function create 30 products 
+    This function create 30 products
     randomly"""
     adjectives = ['Awesome', 'Shiny', 'Impressive', 'Portable', 'Improved']
     nouns = ['Anvil', 'Catapult', 'Disguise', 'Mousetrap', '???']
@@ -23,9 +24,10 @@ def generate_products(num_products=30):
         product_list.append(product)
     return product_list
 
+
 def inventory_report(products):
     """
-    This function performs certain 
+    This function performs certain
     calculations on the products"""
     num_unique_products = len(set(products))
     total_price = sum(product.price for product in products)
@@ -41,4 +43,9 @@ def inventory_report(products):
     print(f"Average weight: {average_weight}")
     print(f"Average flammability: {average_flammability}")
 
-    return (num_unique_products, average_price, average_weight, average_flammability)
+    return (
+        num_unique_products,
+        average_price,
+        average_weight,
+        average_flammability
+    )
