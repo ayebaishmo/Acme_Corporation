@@ -8,7 +8,7 @@ import random
 class Product:
     """
     Above is a class called Product
-    This class create a product 
+    This class create a product
     with several aspects
     """
     def __init__(self, name, price=10, weight=20, flammability=0.5):
@@ -20,7 +20,7 @@ class Product:
 
     def stealability(self):
         """
-        This function calculates the 
+        This function calculates the
         ratio of price to weight
         """
         ratio = self.price / self.weight
@@ -42,9 +42,10 @@ class Product:
             return "...boom!"
         return "...BABOOM!!"
 
+
 class BoxingGlove(Product):
     """
-    This is child class that 
+    This is child class that
     inherits the product class
     """
     def __init__(self, name, price=10, weight=10, flammability=0.5):
