@@ -1,4 +1,9 @@
-import pytest
+"""
+This module tests the function in acme and
+acme_report to ensure they are working
+"""
+
+# pylint: disable=E0401
 from acme import Product
 from acme_report import generate_products
 
