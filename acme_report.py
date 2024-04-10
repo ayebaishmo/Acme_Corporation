@@ -1,5 +1,4 @@
 import random
-import string
 
 from acme import Product
 def generate_products(num_products=30):

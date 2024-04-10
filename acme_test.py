@@ -1,5 +1,5 @@
 import pytest
-from acme import Product, BoxingGlove
+from acme import Product
 from acme_report import generate_products
 
 def test_default_product_price():
